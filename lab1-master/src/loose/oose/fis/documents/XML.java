@@ -9,10 +9,10 @@ public class XML extends Document {
 
     @Override
     public String[] analizeaza() {
-        String[] res = new String[continut.length];
+        String[] res = new String[content.length];
         int      pos = 0;
 
-        for (String cuvant : continut) {
+        for (String cuvant : content) {
             if (cuvant.charAt(0) != '<' || cuvant.charAt(cuvant.length() - 1) != '>') {
                 res[pos] = cuvant;
                 pos++;
